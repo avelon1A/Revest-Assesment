@@ -1,0 +1,18 @@
+# Normalize line endings to LF for all text files
+* text=auto eol=lf
+
+# Scripts must keep LF
+*.sh text eol=lf
+gradlew text eol=lf
+
+# Windows scripts keep CRLF
+*.bat text eol=crlf
+
+# Treat these as binary (no line-ending conversion / diffing)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.jar binary
+*.keystore binary
+*.webp binary
